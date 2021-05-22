@@ -1,0 +1,78 @@
+:root {
+    --nav-color: #859768;
+    --nav-font-fam: 'Reggae One', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #624233;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 55;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--nav-color);
+    font-weight: bold;
+    font-family: var(--nav-font-fam);
+}
+video{
+    height: 92vh;
+    position: absolute;
+    top: 8vh;
+    width: 100vw;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.overlay{
+    height: 92vh;
+    position: absolute;
+    top: 8vh;
+    width: 100vw;
+    background: #1d5068;
+    mix-blend-mode: overlay;
+}
+.object{
+    position: relative;
+    border: 2px solid #000;
+    height: 400px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    padding: 5px 10px;
+}
+.hr{
+    background-color: seagreen;
+    height: 4px;
+    border-radius: 8px;
+}
